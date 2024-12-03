@@ -1,0 +1,32 @@
+//: Write a function swap that takes two integers by reference and swaps their values. Use the function in main() to demonstrate swapping.
+
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+void swap(int &a , int &b){
+    
+  /*  int temp;
+    temp = a;
+    a = b;
+    b = temp; */
+    
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    
+}
+
+int main(){
+    
+    int a  = 10;
+    int b =   15;
+    cout<<"before swap a = "<<a<<"\n"<<"b = "<<b<<"\n";
+    swap(a ,b);
+    
+    cout<<"after swap"<<"\n";
+    
+    cout<<"a ="<<a<<"\n"<<"b ="<<b<<"\n";
+    
+}

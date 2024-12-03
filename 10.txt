@@ -1,0 +1,47 @@
+// Write a function calculator that takes three arguments: two integers and a character representing an operator (+, -, *, /). The function should return the result of the corresponding operation.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void calculator(int a, int b , string c){
+    
+    float d;
+    if(c == "+"){
+        d  = a + b;
+    }
+    else if(c == "-"){
+        d = a - b;
+    }
+    else if(c == "*"){
+        d = a * b;
+    }
+    
+    else if(c == "/"){
+        d = a / b;
+    }
+    
+    else{
+        cout<<"invalid input"<<endl;
+        
+    }
+    
+    cout<<d;
+}
+
+int main(){
+    
+    
+    int a , b ;
+    string c;
+    cout<<"enter a & b"<<endl;
+    cin>>a>>b;
+    
+    cout<<"enter symbol"<<endl;
+    cin>>c;
+    
+    
+    calculator(a , b ,c);
+    
+    
+}

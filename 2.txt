@@ -1,0 +1,24 @@
+//: Write a function calculateArea that takes the length and breadth of a rectangle as arguments and returns its area. Call this function in main() and display the result.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+float area_of_rectangle(float length , float breadth){
+    float area = length * breadth;
+    return area;
+}
+
+int main(){
+    
+    
+    float length = 5;
+    float breadth = 10;
+    
+    
+    cout<<area_of_rectangle(length , breadth)<<endl;
+    
+}
+

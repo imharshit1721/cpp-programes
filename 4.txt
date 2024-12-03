@@ -1,0 +1,33 @@
+//: Write a function isEven that takes an integer as an argument and returns true if the number is even, otherwise returns false.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+bool iseven(int n){
+    bool flag;
+    if(n % 2 == 0){
+        flag = true;
+    }
+    
+    else{
+        flag = false;
+    }
+    
+    return flag;
+    
+}
+
+int main(){
+    
+    int n;
+    cout<<"enter number"<<endl;
+    cin>>n;
+    
+    if(iseven(n)){
+        cout<<n<<" : it is even"<<endl;
+    }
+    
+    else{
+        cout<<n<<" is not even"<<endl;
+    }
+}
